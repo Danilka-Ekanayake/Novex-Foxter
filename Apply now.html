@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Novex Foxter</title>
+  <link rel="stylesheet" href="Novex.css" />
+  <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header" data-aos="fade-down">
+  <div class="logo">
+    <a href="index.html"><img src="Pictures/Novex Foxter Logo.png" alt="Novex Logo" /></a>
+    <p>"Nation's Software Provider"</p>
+  </div>
+
+  <!--Hamburger -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        <li class="cta">
+          <button class="cta-button" onclick="window.location.href='career.html'">Join Us</button>
+        </li>
+    </ul>
+  </nav>
+
+  <div class="header-right">
+    <input class="Search" placeholder="Search..." />
+  </div>
+</header>
+     <div class="apply-container">
+    <h1 class="fade-in">Apply Now</h1>
+    <form id="applicationForm" class="slide-in">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="role">Position Applying For</label>
+      <select id="role" name="role" required>
+        <option value="">Select a role</option>
+        <option value="Marketing Specialist">Marketing Specialist</option>
+        <option value="Web Developer">Web Developer</option>
+      </select>
+
+      <label for="resume">Upload Resume (PDF)</label>
+      <input type="file" id="resume" name="resume" accept=".pdf" required />
+
+      <label for="message">Why should we hire you?</label>
+      <textarea id="message" name="message" rows="3" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+    <p id="successMessage" class="success-message hidden">🎉Application submitted successfully!</p>
+  </div>
+        
+
+    <footer>
+        <p>&copy; 2025 Novex Foxter (PVT) LTD.All rights reserved.</p>
+    </footer>
+<script src="Novex.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+</body>
+</html>    
