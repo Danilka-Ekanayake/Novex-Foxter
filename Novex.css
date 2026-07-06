@@ -1467,6 +1467,95 @@ button.submit-btn:hover {
 }
 
 }
+
+/* ================= Back To Top ================= */
+
+#backToTop{
+
+    position:fixed;
+
+    bottom:35px;
+    right:35px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#c89b2b;
+    color:#000;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:
+    opacity .4s,
+    transform .4s,
+    visibility .4s,
+    background .3s;
+
+    z-index:9999;
+
+    box-shadow:
+    0 0 10px rgba(200,155,43,.4);
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+#backToTop:hover{
+
+    background:#ffd700;
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 15px rgba(255,215,0,.6),
+    0 0 30px rgba(255,215,0,.4);
+
+}
+
+#backToTop:active{
+
+    transform:scale(.92);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+#backToTop{
+
+    width:48px;
+    height:48px;
+
+    font-size:18px;
+
+    right:20px;
+    bottom:20px;
+
+}
+
+}
 /*footer*/
 .read-more {
   margin-top: 0.5rem;
