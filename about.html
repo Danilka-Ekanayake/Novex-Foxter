@@ -3,131 +3,192 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
+  <title>About Novex Foxter | The people behind the ideas</title>
   <link rel="stylesheet" href="Novex.css" />
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Site-chrome.css" />
+  <link rel="stylesheet" href="About.css" />
 </head>
 <body>
 <header class="header" data-aos="fade-down">
-  <div class="logo">
-    <a href="index.html"><img src="Pictures/Novex Foxter Logo.png" alt="Novex Logo" /></a>
-    <p>"Nation's Software Provider"</p>
-  </div>
+  <a class="logo" href="index.html" aria-label="Novex Foxter home">
+    <img src="Pictures/Novex Foxter Logo.png" alt="" />
+    <span class="logo-copy">
+      <strong>Novex Foxter</strong>
+      <span>Digital, thoughtfully done.</span>
+    </span>
+  </a>
+  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <!--Hamburger -->
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="Services.html">Services</a></li>
       <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Blog.html">Journal</a></li>
       <li><a href="contact.html">Contact</a></li>
-        <li class="cta">
-          <button class="cta-button" onclick="window.location.href='career.html'">Join Us</button>
-        </li>
+      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
-
-  <div class="header-right">
-    <input class="Search" placeholder="Search..." />
-  </div>
 </header>
-<section class="About-Us">
-      <section class="about-hero" data-aos="fade-up">
-      <div>
-        <p class="promo-label">About Novex Foxter</p>
-        <h1>About Us</h1>
-        <p>Get to know about Novex Foxter and our journey towards innovation and excellence.</p>
+<main class="about-page">
+  <section class="about-hero" aria-labelledby="about-title">
+    <div class="about-hero-grid" aria-hidden="true"></div>
+    <div class="about-hero-inner">
+      <div class="about-hero-copy">
+        <p class="about-eyebrow"><span></span> A little about us</p>
+        <h1 id="about-title">Good ideas.<br /><span>Real impact.</span></h1>
+        <p>We’re a curious team of creative thinkers and technology people, bringing ideas to life with care, clarity, and a belief in what’s possible.</p>
+        <a class="about-hero-link" href="#our-story">Get to know us <span aria-hidden="true">↓</span></a>
       </div>
-    </section>
-    <section class="chairman-message" data-aos="fade-up">
-      <div class="container">
-        <div class="message-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Chairman" class="chairman-photo" />
-          <div class="message-content">
-            <h2>A Message from Our Chairman</h2>
-            <p>
-              At Novex Foxter, our vision has always been rooted in innovation, trust, and unwavering dedication to excellence. 
-              As Chairman, I am proud of the journey we’ve undertaken and the passionate team behind our growth. 
-              We believe in creating value, not just in business—but in every connection we build.
-            </p>
-            <p>
-              Thank you for being part of our story. Together, we move forward with purpose and confidence.
-            </p>
-            <h4 class="chairman-name">Mr. Kavindu Hansaja</h4>
-            <span class="chairman-title">Chairman, Novex Foxter</span>
-          </div>
+      <div class="about-hero-art" aria-hidden="true">
+        <div class="about-art-orbit"></div>
+        <div class="about-art-circle"></div>
+        <div class="about-art-card">
+          <span class="about-art-label">NOVEX FOXTER / OUR APPROACH</span>
+          <span class="about-art-statement">Curious<br />by nature.<br /><b>Made to matter.</b></span>
+          <span class="about-art-mark">✳</span>
+          <span class="about-art-foot">PEOPLE · PURPOSE · POSSIBILITY</span>
+        </div>
+        <span class="about-art-float">Good things happen<br />when we build together.</span>
+      </div>
+    </div>
+    <div class="about-hero-index"><span>01</span> / THE PEOPLE BEHIND THE IDEAS</div>
+  </section>
+
+  <section class="about-story" id="our-story" aria-labelledby="story-title">
+    <div class="about-section-shell">
+      <div class="about-story-label">
+        <p class="about-eyebrow">The way we see it</p>
+        <span class="about-section-index">01 — OUR STORY</span>
+      </div>
+      <div class="about-story-copy">
+        <h2 id="story-title">Technology is powerful.<br /><span>People give it purpose.</span></h2>
+        <div class="about-story-columns">
+          <p>At Novex Foxter, we believe the best digital work starts by listening. Every business has a story worth telling and a challenge worth solving. We bring creativity, strategy, and technology together to help make the next chapter count.</p>
+          <p>We value clear thinking, thoughtful craft, and genuine collaboration. From the first conversation to the final detail, our goal is to create work that feels right, works beautifully, and makes a lasting difference.</p>
         </div>
       </div>
-    </section>
-    
-  <section class="team-section">
-    <h2>Our Team</h2>
-    <div class="team-grid">
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 1" />
-        <h3>Mr. Kavindu Hansaja</h3>
-        <p>Chairman & Director(CEO)</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="d:\Batch party\Kingswood batch party 22\Danilka Ekanayake.jpg" alt="Team Member 2" />
-        <h3>Mr. Danilka Ekanayake</h3>
-        <p>Director & Senior software engineer</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 3" />
-        <h3>Mr. Thevinu Wijegunarathna</h3>
-        <p>Director & Senior software engineer</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 3" />
-        <h3>Mr. Heshan Weerasingha</h3>
-        <p>Director & marketing executive</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 3" />
-        <h3>Mr. Ayumahasen</h3>
-        <p>Director & graphic designer</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 3" />
-        <h3>Mr. Ayumahasen</h3>
-        <p>Director & graphic designer</p>
-      </div>
-      <div class="team-card" data-aos="fade-up">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Team Member 3" />
-        <h3>Mr. Ayumahasen</h3>
-        <p>Director & graphic designer</p>
-      </div>  
     </div>
   </section>
-  <section class="our-mission-vision">
-  <section class="our-mission" data-aos="fade-up">
-  <div class="mission-card"> 
-    <h1>Our Mission</h1>
-    <p>At Novex Foxter, our mission is to craft cutting-edge web and software solutions that blend creativity, technology, and strategy to elevate brands and businesses. We are driven to deliver exceptional digital experiences through innovative design, robust development, and a deep understanding of our clients’ goals. Our commitment is to empower startups and enterprises with scalable, secure, and smart technology that drives success in the digital age.</p>
-  </div> 
+
+  <section class="about-values" aria-label="Our values">
+    <div class="about-values-inner">
+      <div class="about-value"><span>01</span><strong>Curiosity</strong><small>Ask better questions.</small></div>
+      <div class="about-value"><span>02</span><strong>Craft</strong><small>Care about the details.</small></div>
+      <div class="about-value"><span>03</span><strong>Together</strong><small>Make better work, together.</small></div>
+      <div class="about-value"><span>04</span><strong>Purpose</strong><small>Make every choice count.</small></div>
+    </div>
   </section>
 
-  <section class="our-vision" data-aos="fade-up">
-    <div class="vision-card">
-    <h1>Our Vision</h1>
-    <p>Our vision is to become a leading global software and digital branding company recognized for turning bold ideas into digital realities. We aspire to be the go-to creative tech partner for brands seeking innovation, excellence, and impact — building a future where technology amplifies identity, growth, and purpose.</p>
-  </div>
+  <section class="about-chairman" aria-labelledby="chairman-title">
+    <div class="about-section-shell chairman-layout">
+      <div class="chairman-visual">
+        <div class="chairman-photo-frame">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GYqWpGFiLZKCCKigoLrazGQ_enZmK9vgtQ&s" alt="Mr. Kavindu Hansaja, Chairman of Novex Foxter" loading="lazy" />
+        </div>
+        <span class="chairman-photo-caption"><span></span> A note from our leadership</span>
+      </div>
+      <div class="chairman-copy">
+        <p class="about-eyebrow">A message from our chairman</p>
+        <h2 id="chairman-title">The best way forward<br />is <span>together.</span></h2>
+        <blockquote>
+          <p>At Novex Foxter, our vision has always been rooted in innovation, trust, and unwavering dedication to excellence. As Chairman, I am proud of the journey we’ve undertaken and the passionate team behind our growth. We believe in creating value, not just in business—but in every connection we build.</p>
+          <p>Thank you for being part of our story. Together, we move forward with purpose and confidence.</p>
+        </blockquote>
+        <div class="chairman-signature">
+          <strong>Mr. Kavindu Hansaja</strong>
+          <span>Chairman, Novex Foxter</span>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section class="about-purpose" aria-label="Our mission and vision">
+    <div class="about-purpose-heading">
+      <p class="about-eyebrow">Where we’re going</p>
+      <h2>Good work with<br /><span>a reason behind it.</span></h2>
+    </div>
+    <div class="about-purpose-grid">
+      <article class="purpose-card">
+        <span class="purpose-number">01 / OUR MISSION</span>
+        <span class="purpose-icon"><i class="fa-solid fa-compass" aria-hidden="true"></i></span>
+        <h3>Make the meaningful possible.</h3>
+        <p>At Novex Foxter, our mission is to craft cutting-edge web and software solutions that blend creativity, technology, and strategy to elevate brands and businesses. We are driven to deliver exceptional digital experiences through innovative design, robust development, and a deep understanding of our clients’ goals. Our commitment is to empower startups and enterprises with scalable, secure, and smart technology that drives success in the digital age.</p>
+      </article>
+      <article class="purpose-card">
+        <span class="purpose-number">02 / OUR VISION</span>
+        <span class="purpose-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></span>
+        <h3>Build a future with more possibility.</h3>
+        <p>Our vision is to become a leading global software and digital branding company recognized for turning bold ideas into digital realities. We aspire to be the go-to creative tech partner for brands seeking innovation, excellence, and impact — building a future where technology amplifies identity, growth, and purpose.</p>
+      </article>
+    </div>
   </section>
-</section>
+
+  <section class="about-team" id="team" aria-labelledby="team-title">
+    <div class="about-section-shell">
+      <div class="about-team-heading">
+        <div>
+          <p class="about-eyebrow">Meet the people behind the work</p>
+          <h2 id="team-title">Different minds.<br /><span>One shared ambition.</span></h2>
+        </div>
+        <p>Good work is a team effort. Meet some of the people bringing care, creativity, and a little extra curiosity to every project.</p>
+      </div>
+      <div class="about-team-grid">
+        <article class="about-person">
+          <div class="person-avatar avatar-gold" aria-hidden="true"><span>KH</span><i class="fa-solid fa-sparkles"></i></div>
+          <span class="person-role">LEADERSHIP</span>
+          <h3>Mr. Kavindu Hansaja</h3>
+          <p>Chairman &amp; Director (CEO)</p>
+        </article>
+        <article class="about-person">
+          <div class="person-avatar avatar-olive" aria-hidden="true"><span>DE</span><i class="fa-solid fa-code"></i></div>
+          <span class="person-role">ENGINEERING</span>
+          <h3>Mr. Danilka Ekanayake</h3>
+          <p>Director &amp; Senior Software Engineer</p>
+        </article>
+        <article class="about-person">
+          <div class="person-avatar avatar-rust" aria-hidden="true"><span>TW</span><i class="fa-solid fa-laptop-code"></i></div>
+          <span class="person-role">ENGINEERING</span>
+          <h3>Mr. Thevinu Wijegunarathna</h3>
+          <p>Director &amp; Senior Software Engineer</p>
+        </article>
+        <article class="about-person">
+          <div class="person-avatar avatar-blue" aria-hidden="true"><span>HW</span><i class="fa-solid fa-bullhorn"></i></div>
+          <span class="person-role">MARKETING</span>
+          <h3>Mr. Heshan Weerasingha</h3>
+          <p>Director &amp; Marketing Executive</p>
+        </article>
+        <article class="about-person">
+          <div class="person-avatar avatar-plum" aria-hidden="true"><span>AY</span><i class="fa-solid fa-pen-nib"></i></div>
+          <span class="person-role">DESIGN</span>
+          <h3>Mr. Ayumahasen</h3>
+          <p>Director &amp; Graphic Designer</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-cta">
+    <div class="about-cta-inner">
+      <div>
+        <p class="about-eyebrow">Have a good idea?</p>
+        <h2>We’d love to hear<br /><span>what you’re dreaming up.</span></h2>
+      </div>
+      <a href="contact.html">Let’s start a conversation <span aria-hidden="true">↗</span></a>
+      <span class="about-cta-mark" aria-hidden="true">✳</span>
+    </div>
+  </section>
+</main>
 <div class="footer-top">
 
     <div class="gold-line"></div>
@@ -157,12 +218,12 @@
             </p>
 
 <div class="social-icons">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-behance"></i></a>
-    <a href="#"><i class="fab fa-dribbble"></i></a>
-    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
 </div>
         </div>
 
@@ -171,10 +232,10 @@
             <h3>Company</h3>
 
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
@@ -183,10 +244,10 @@
             <h3>Services</h3>
 
             <ul>
-                <li><a href="#">Branding & Strategy</a></li>
-                <li><a href="#">Marketing Campaigns</a></li>
-                <li><a href="#">Creative Solutions</a></li>
-                <li><a href="#">Consultation</a></li>
+                <li><a href="Services.html">Branding & Strategy</a></li>
+                <li><a href="Services.html">Marketing Campaigns</a></li>
+                <li><a href="Services.html">Creative Solutions</a></li>
+                <li><a href="Services.html">Consultation</a></li>
             </ul>
         </div>
 
@@ -195,10 +256,10 @@
             <h3>Resources</h3>
 
             <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Insights</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Portfolio.html">Case Studies</a></li>
+                <li><a href="Blog.html">Insights</a></li>
             </ul>
         </div>
 

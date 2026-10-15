@@ -10,38 +10,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Site-chrome.css" />
 </head>
 <body>
 <header class="header" data-aos="fade-down">
-  <div class="logo">
-    <a href="index.html"><img src="Pictures/Novex Foxter Logo.png" alt="Novex Logo" /></a>
-    <p>"Nation's Software Provider"</p>
-  </div>
+  <a class="logo" href="index.html" aria-label="Novex Foxter home">
+    <img src="Pictures/Novex Foxter Logo.png" alt="" />
+    <span class="logo-copy">
+      <strong>Novex Foxter</strong>
+      <span>Digital, thoughtfully done.</span>
+    </span>
+  </a>
+  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <!--Hamburger -->
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="Services.html">Services</a></li>
       <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Blog.html">Journal</a></li>
       <li><a href="contact.html">Contact</a></li>
-        <li class="cta">
-          <button class="cta-button" onclick="window.location.href='career.html'">Join Us</button>
-        </li>
+      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
-
-  <div class="header-right">
-    <input class="Search" placeholder="Search..." />
-  </div>
 </header>
     <main class="blog-main">
     <section class="about-hero" data-aos="fade-up">
@@ -119,12 +115,12 @@
             </p>
 
 <div class="social-icons">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-behance"></i></a>
-    <a href="#"><i class="fab fa-dribbble"></i></a>
-    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
 </div>
         </div>
 
@@ -133,10 +129,10 @@
             <h3>Company</h3>
 
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
@@ -145,10 +141,10 @@
             <h3>Services</h3>
 
             <ul>
-                <li><a href="#">Branding & Strategy</a></li>
-                <li><a href="#">Marketing Campaigns</a></li>
-                <li><a href="#">Creative Solutions</a></li>
-                <li><a href="#">Consultation</a></li>
+                <li><a href="Services.html">Branding & Strategy</a></li>
+                <li><a href="Services.html">Marketing Campaigns</a></li>
+                <li><a href="Services.html">Creative Solutions</a></li>
+                <li><a href="Services.html">Consultation</a></li>
             </ul>
         </div>
 
@@ -157,10 +153,10 @@
             <h3>Resources</h3>
 
             <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Insights</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Portfolio.html">Case Studies</a></li>
+                <li><a href="Blog.html">Insights</a></li>
             </ul>
         </div>
 

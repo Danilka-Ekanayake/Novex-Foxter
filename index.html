@@ -3,170 +3,232 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
-  <link rel="stylesheet" href="Novex.css" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="Novex Foxter creates thoughtful digital experiences, brands, and software that help ambitious businesses move forward." />
+  <title>Novex Foxter | Digital ideas, made real</title>
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Novex.css" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
-  <div class="logo">
-    <a href="index.html"><img src="Pictures/Novex Foxter Logo.png" alt="Novex Logo" /></a>
-    <p>"Nation's Software Provider"</p>
-  </div>
+<body class="home-page">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Novex Foxter home">
+      <img src="Pictures/Novex Foxter Logo.png" alt="" />
+      <span class="logo-copy">
+        <strong>Novex Foxter</strong>
+        <span>Digital, thoughtfully done.</span>
+      </span>
+    </a>
 
-  <!--Hamburger -->
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <nav class="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-        <li class="cta">
-          <button class="cta-button" onclick="window.location.href='career.html'">Join Us</button>
-        </li>
-    </ul>
-  </nav>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="header-right">
-    <input class="Search" placeholder="Search..." />
-  </div>
-</header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Independent digital studio</p>
+          <h1>Good ideas deserve <span>a bigger</span> future.</h1>
+          <p class="hero-intro">We bring strategy, design, and technology together to make digital experiences people remember — and businesses grow.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="Portfolio.html">Explore our work <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="contact.html">Let's talk <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <p>From the first spark to what comes next.</p>
+          </div>
+        </div>
 
-<section id="home" class="hero">
-  <div class="content">
-    <h1 id="hero-title"></h1>
-    <p id="hero-subtitle"></p>
-  </div>
+        <div class="hero-art" role="img" aria-label="A preview of a digital product design">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-glow"></div>
+          <div class="art-label"><span></span> A little more possibility</div>
+          <div class="art-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>your-next-big-thing.co</span>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </div>
+            <div class="window-content">
+              <div class="window-kicker">MADE FOR WHAT'S NEXT</div>
+              <div class="window-heading">Make room<br />for <span>better.</span></div>
+              <div class="window-description"></div>
+              <div class="window-button"></div>
+              <div class="window-shape shape-large"></div>
+              <div class="window-shape shape-small"></div>
+              <div class="window-sparkle">✳</div>
+            </div>
+          </div>
+          <div class="float-card float-card-top"><span class="float-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><span><strong>Built with intention</strong><small>Thoughtful by design</small></span></div>
+          <div class="float-card float-card-bottom"><span class="float-check"><i class="fa-solid fa-check" aria-hidden="true"></i></span><span><strong>Ideas in motion</strong><small>Strategy meets craft</small></span></div>
+          <span class="art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="art-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#services"><span></span> Scroll to explore</a>
+      <div class="hero-index" aria-hidden="true">01 <span></span> 04</div>
+    </section>
 
-  <div class="button-container">
-    <button class="work-button" onclick="window.location.href='Portfolio.html'">View Our Work</button>
-    <button class="contact-button" onclick="window.location.href='Login.html'">Get in Touch</button>
-  </div>
-</section>
-<section class="about-preview">
-  <div class="about-container" data-aos="fade-up">
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>
-        At <span class="gold">Novex Foxter</span>, we believe in transforming brands and businesses through powerful digital solutions. Our passionate team blends creativity, strategy, and technology to deliver next-level branding and marketing experiences.
-      </p>
-      <a href="about.html" class="about-btn">Learn More About Us</a>
-    </div>
-    <div class="about-image">
-      <img src="https://ddi-dev.com/uploads/agile-software-development-team-structure.png" alt="Novex Foxter Team" />
-    </div>
-  </div>
-</section>
-<div class="footer-top">
+    <section class="intro-strip" aria-label="What we do">
+      <div class="intro-strip-inner">
+        <span>Strategy</span><i aria-hidden="true">✳</i>
+        <span>Brand</span><i aria-hidden="true">✳</i>
+        <span>Digital products</span><i aria-hidden="true">✳</i>
+        <span>Technology</span><i aria-hidden="true">✳</i>
+        <span>Growth</span>
+      </div>
+    </section>
 
+    <section class="services-preview" id="services">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">The way we make a difference</p>
+            <h2>Small details.<br /><span>Big-picture thinking.</span></h2>
+          </div>
+          <p class="section-intro">We help ambitious teams find their edge and turn it into something real, useful, and unmistakably theirs.</p>
+        </div>
+
+        <div class="service-cards">
+          <a class="service-card" href="Services.html">
+            <span class="service-number">01 / THINK</span>
+            <span class="service-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></span>
+            <h3>Find your direction</h3>
+            <p>Clear strategy and sharp positioning to help your next move mean more.</p>
+            <span class="service-link">Explore strategy <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="service-card" href="Services.html">
+            <span class="service-number">02 / CREATE</span>
+            <span class="service-icon"><i class="fa-solid fa-shapes" aria-hidden="true"></i></span>
+            <h3>Make it memorable</h3>
+            <p>Distinctive brands and digital experiences with a little more feeling.</p>
+            <span class="service-link">Explore design <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="service-card" href="Services.html">
+            <span class="service-number">03 / BUILD</span>
+            <span class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+            <h3>Bring it to life</h3>
+            <p>Thoughtful software and technology, made to work beautifully in the real world.</p>
+            <span class="service-link">Explore technology <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-preview" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <p class="eyebrow section-eyebrow">A good team makes all the difference</p>
+          <h2>Good work starts<br />with <span class="gold">good people.</span></h2>
+          <p>At Novex Foxter, we believe the best digital work happens when creative thinking and practical technology sit at the same table. We're a curious, collaborative team who care about the details — and the difference they make.</p>
+          <a href="about.html" class="about-btn">A little more about us <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-image">
+          <img src="https://ddi-dev.com/uploads/agile-software-development-team-structure.png" alt="A collaborative team working through a software project" loading="lazy" />
+          <span class="image-caption"><span></span> Better, together.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-banner">
+      <div class="contact-banner-inner">
+        <div>
+          <p class="eyebrow">Have a good one in mind?</p>
+          <h2>Let's make something<br /><span>that moves you forward.</span></h2>
+        </div>
+        <a class="button button-light" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+        <span class="banner-star" aria-hidden="true">✳</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-top" aria-hidden="true">
     <div class="gold-line"></div>
-
-    <svg class="wave"
-         viewBox="0 0 1440 120"
-         preserveAspectRatio="none">
-
-        <path fill="#000"
-        d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z">
-        </path>
-
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path fill="#10110f" d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z"></path>
     </svg>
+  </div>
 
-</div>
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
-
-        <!-- Company Info -->
-        <div class="footer-column footer-brand">
-            <h2>Novex Foxter Group</h2>
-
-            <p>
-                Collaborative creativity and innovative
-                solutions that drive business growth and
-                create lasting impact.
-            </p>
-
-<div class="social-icons">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-behance"></i></a>
-    <a href="#"><i class="fab fa-dribbble"></i></a>
-    <a href="#"><i class="fab fa-tiktok"></i></a>
-</div>
+      <div class="footer-column footer-brand">
+        <h2>Novex Foxter Group</h2>
+        <p>Collaborative creativity and innovative solutions that drive business growth and create lasting impact.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Company -->
-        <div class="footer-column">
-            <h3>Company</h3>
-
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="#">Branding & Strategy</a></li>
-                <li><a href="#">Marketing Campaigns</a></li>
-                <li><a href="#">Creative Solutions</a></li>
-                <li><a href="#">Consultation</a></li>
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-column">
-            <h3>Resources</h3>
-
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Insights</a></li>
-            </ul>
-        </div>
-
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="Services.html">Branding &amp; Strategy</a></li>
+          <li><a href="Services.html">Marketing Campaigns</a></li>
+          <li><a href="Services.html">Creative Solutions</a></li>
+          <li><a href="Services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Case Studies</a></li>
+          <li><a href="Blog.html">Insights</a></li>
+        </ul>
+      </div>
     </div>
-
-    <hr>
-
+    <hr />
     <div class="footer-bottom">
-
-        <p>© 2026 Novex Foxter Group. All rights reserved.</p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-
+      <p>© 2026 Novex Foxter Group. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
     </div>
+  </footer>
 
-</footer>
-<script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200 });
-  </script>
-  <button id="backToTop" title="Back to Top">
-    <i class="fas fa-arrow-up"></i>
-</button>
+  <button id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <script src="Novex.js"></script>
 </body>
-</html>    
+</html>

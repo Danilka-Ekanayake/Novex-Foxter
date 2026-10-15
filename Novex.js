@@ -1,33 +1,34 @@
-const titleText = "Innovative Solutions with the Novex Foxter Team";
-const subtitleText = "Collaborative Creativity Limitless Possibilities ";
-
-function typeText(elementId, text, speed) {
-  let i = 0;
-  const element = document.getElementById(elementId);
-  function type() {
-    if (i < text.length) {
-      element.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, speed);
-    }
-  }
-  type();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  typeText("hero-title", titleText, 40); // Faster typing for the title
-  setTimeout(() => {
-    typeText("hero-subtitle", subtitleText, 45); // Faster typing for the subtitle
-  }, titleText.length * 40 + 500); // Delay after title finishes
-});
-
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('nav-active');
-  hamburger.classList.toggle('toggle');
-});
+if (nav) {
+  const currentPage = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const currentLink = Array.from(nav.querySelectorAll('a[href]')).find((link) => {
+    const targetPage = decodeURIComponent(link.getAttribute('href').split('/').pop()).toLowerCase();
+    return targetPage === currentPage;
+  });
+
+  if (currentLink) currentLink.setAttribute('aria-current', 'page');
+}
+
+if (hamburger && nav) {
+  hamburger.addEventListener('click', () => {
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+    nav.classList.toggle('nav-active', !isExpanded);
+    hamburger.classList.toggle('toggle', !isExpanded);
+    hamburger.setAttribute('aria-expanded', String(!isExpanded));
+    hamburger.setAttribute('aria-label', isExpanded ? 'Open navigation' : 'Close navigation');
+  });
+
+  nav.addEventListener('click', (event) => {
+    if (event.target.closest('a')) {
+      nav.classList.remove('nav-active');
+      hamburger.classList.remove('toggle');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation');
+    }
+  });
+}
 document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(".animate-on-scroll");
 
@@ -52,22 +53,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 console.log("Team section loaded");
 
-document.getElementById('applicationForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+const applicationForm = document.getElementById('applicationForm');
+if (applicationForm) {
+  applicationForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-  // Basic check (add AJAX or backend logic here later)
-  const fullName = document.getElementById('fullName').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const role = document.getElementById('role').value;
-  const resume = document.getElementById('resume').files.length;
+    const fullName = document.getElementById('fullName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const role = document.getElementById('role').value;
+    const resume = document.getElementById('resume').files.length;
 
-  if (fullName && email && role && resume) {
-    document.getElementById('applicationForm').classList.add('hidden');
-    document.getElementById('successMessage').classList.remove('hidden');
-  } else {
-    alert('Please fill out all required fields and upload your resume.');
-  }
-});
+    if (fullName && email && role && resume) {
+      applicationForm.classList.add('hidden');
+      document.getElementById('successMessage').classList.remove('hidden');
+    } else {
+      alert('Please fill out all required fields and upload your resume.');
+    }
+  });
+}
 
 // ================= Back To Top =================
 
@@ -75,13 +78,13 @@ const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 400){
+    if(backToTop && window.scrollY > 400){
 
         backToTop.classList.add("show");
 
     }
 
-    else{
+    else if (backToTop) {
 
         backToTop.classList.remove("show");
 
@@ -89,7 +92,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-backToTop.addEventListener("click", () => {
+if (backToTop) backToTop.addEventListener("click", () => {
 
     window.scrollTo({
 
@@ -99,4 +102,3 @@ backToTop.addEventListener("click", () => {
     });
 
 });
-

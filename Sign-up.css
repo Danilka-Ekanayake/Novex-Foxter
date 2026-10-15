@@ -207,7 +207,7 @@ transform: scale(1.05);
 
 .signup-container {
     flex: 1; /* Push the footer to the bottom when content is short */
-    width: 400px;
+    width: min(400px, calc(100% - 32px));
     margin: 100px auto;
     padding: 20px;
     background:transparent;

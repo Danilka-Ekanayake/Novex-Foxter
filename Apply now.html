@@ -3,72 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
+  <title>Apply for a role | Novex Foxter</title>
   <link rel="stylesheet" href="Novex.css" />
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Site-chrome.css" />
+  <link rel="stylesheet" href="Apply-now.css" />
 </head>
 <body>
 <header class="header" data-aos="fade-down">
-  <div class="logo">
-    <a href="index.html"><img src="Pictures/Novex Foxter Logo.png" alt="Novex Logo" /></a>
-    <p>"Nation's Software Provider"</p>
-  </div>
+  <a class="logo" href="index.html" aria-label="Novex Foxter home">
+    <img src="Pictures/Novex Foxter Logo.png" alt="" />
+    <span class="logo-copy">
+      <strong>Novex Foxter</strong>
+      <span>Digital, thoughtfully done.</span>
+    </span>
+  </a>
+  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <!--Hamburger -->
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <nav class="nav">
+  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="Services.html">Services</a></li>
       <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Blog.html">Journal</a></li>
       <li><a href="contact.html">Contact</a></li>
-        <li class="cta">
-          <button class="cta-button" onclick="window.location.href='career.html'">Join Us</button>
-        </li>
+      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
     </ul>
   </nav>
-
-  <div class="header-right">
-    <input class="Search" placeholder="Search..." />
-  </div>
 </header>
-     <div class="apply-container">
-    <h1 class="fade-in">Apply Now</h1>
-    <form id="applicationForm" class="slide-in">
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" name="fullName" required />
+  <main class="apply-page">
+    <section class="apply-shell" aria-labelledby="apply-title">
+      <div class="apply-intro">
+        <p class="apply-eyebrow"><span></span> Your next chapter starts here</p>
+        <h1 id="apply-title">Do work that<br /><span>moves things forward.</span></h1>
+        <p class="apply-lead">Bring your curiosity, your point of view, and the things you do best. Tell us a little about yourself and let's see what we can make happen together.</p>
+        <div class="apply-perks">
+          <div class="apply-perk">
+            <span class="perk-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
+            <span><strong>Room to make an impact</strong><small>Bring good ideas to meaningful work.</small></span>
+          </div>
+          <div class="apply-perk">
+            <span class="perk-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+            <span><strong>People who build together</strong><small>Thoughtful, collaborative, always learning.</small></span>
+          </div>
+        </div>
+        <p class="apply-footnote"><i class="fa-regular fa-clock" aria-hidden="true"></i> A few details are all it takes to get started.</p>
+        <span class="apply-decoration" aria-hidden="true">✳</span>
+      </div>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
+      <div class="apply-form-card">
+        <div class="form-heading">
+          <div>
+            <p class="form-step">01 <span>/</span> YOUR DETAILS</p>
+            <h2>Let's get to know you.</h2>
+          </div>
+          <span class="form-heading-icon" aria-hidden="true"><i class="fa-regular fa-paper-plane"></i></span>
+        </div>
 
-      <label for="role">Position Applying For</label>
-      <select id="role" name="role" required>
-        <option value="">Select a role</option>
-        <option value="Marketing Specialist">Marketing Specialist</option>
-        <option value="Web Developer">Web Developer</option>
-      </select>
-
-      <label for="resume">Upload Resume (PDF)</label>
-      <input type="file" id="resume" name="resume" accept=".pdf" required />
-
-      <label for="message">Why should we hire you?</label>
-      <textarea id="message" name="message" rows="3" required></textarea>
-
-      <button type="submit" class="submit-btn">Submit Application</button>
-    </form>
-    <p id="successMessage" class="success-message hidden">🎉Application submitted successfully!</p>
-  </div>
+        <form id="applicationForm">
+          <div class="apply-fields">
+            <div class="apply-field">
+              <label for="fullName">Full name <span>*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="e.g. Alex Morgan" autocomplete="name" required />
+            </div>
+            <div class="apply-field">
+              <label for="email">Email address <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="apply-field">
+              <label for="role">Position you're interested in <span>*</span></label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Choose a role</option>
+                <option value="Marketing Specialist">Marketing Specialist</option>
+                <option value="Web Developer">Web Developer</option>
+              </select>
+            </div>
+            <div class="apply-field">
+              <label for="resume">Your resume <span>*</span></label>
+              <input type="file" id="resume" name="resume" accept=".pdf,application/pdf" aria-describedby="resume-help" required />
+              <small class="field-hint" id="resume-help">PDF format, please.</small>
+            </div>
+            <div class="apply-field apply-field-full">
+              <label for="message">What would you bring to the team? <span>*</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="A little about your experience, what you enjoy doing, or what you're curious about..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Send my application <span aria-hidden="true">↗</span></button>
+          <p class="form-privacy"><i class="fa-solid fa-lock" aria-hidden="true"></i> Your details are only used to review your application.</p>
+        </form>
+        <p id="successMessage" class="success-message hidden" role="status" aria-live="polite"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Application received.</strong><br />Thanks for sharing a little about yourself. We'll be in touch.</span></p>
+      </div>
+    </section>
+  </main>
 <div class="footer-top">
 
     <div class="gold-line"></div>
@@ -83,7 +118,7 @@
 
     </svg>
 
-</div>        
+</div>
 
 <footer class="footer">
     <div class="footer-container">
@@ -99,12 +134,12 @@
             </p>
 
 <div class="social-icons">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-behance"></i></a>
-    <a href="#"><i class="fab fa-dribbble"></i></a>
-    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
 </div>
         </div>
 
@@ -113,10 +148,10 @@
             <h3>Company</h3>
 
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
@@ -125,10 +160,10 @@
             <h3>Services</h3>
 
             <ul>
-                <li><a href="#">Branding & Strategy</a></li>
-                <li><a href="#">Marketing Campaigns</a></li>
-                <li><a href="#">Creative Solutions</a></li>
-                <li><a href="#">Consultation</a></li>
+                <li><a href="Services.html">Branding & Strategy</a></li>
+                <li><a href="Services.html">Marketing Campaigns</a></li>
+                <li><a href="Services.html">Creative Solutions</a></li>
+                <li><a href="Services.html">Consultation</a></li>
             </ul>
         </div>
 
@@ -137,10 +172,10 @@
             <h3>Resources</h3>
 
             <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Insights</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Portfolio.html">Case Studies</a></li>
+                <li><a href="Blog.html">Insights</a></li>
             </ul>
         </div>
 
