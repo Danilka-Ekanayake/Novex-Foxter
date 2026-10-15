@@ -3,307 +3,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
-  <link rel="stylesheet" href="Novex.css" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="A closer look at the kind of thoughtful strategy, design, and digital work Novex Foxter loves to create." />
+  <title>Our Work | Novex Foxter</title>
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Portfolio.css" />
   <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
-  <a class="logo" href="index.html" aria-label="Novex Foxter home">
-    <img src="Pictures/Novex Foxter Logo.png" alt="" />
-    <span class="logo-copy">
-      <strong>Novex Foxter</strong>
-      <span>Digital, thoughtfully done.</span>
-    </span>
-  </a>
-  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+<body class="home-page portfolio-page">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Novex Foxter home">
+      <img src="Pictures/Novex Foxter Logo.png" alt="" />
+      <span class="logo-copy">
+        <strong>Novex Foxter</strong>
+        <span>Digital, thoughtfully done.</span>
+      </span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="Blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Journal</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
-    </ul>
-  </nav>
-</header>
+  <main>
+    <section class="hero portfolio-hero" aria-labelledby="portfolio-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A little look at what we do</p>
+          <h1 id="portfolio-title">Ideas, out in<br /><span>the world.</span></h1>
+          <p class="hero-intro">A collection of creative thinking, thoughtful design, and digital craft. Each project starts with a good question — and goes somewhere new.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#selected-work">See selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="contact.html">Make something together <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <p>Different challenges. One thoughtful approach.</p>
+          </div>
+        </div>
 
-    <section id="portfolio" class="portfolio-section">
-    <section class="about-hero" data-aos="fade-up">
-      <div>
-        <p class="promo-label">Novex foxter portfolio</p>
-        <h1>Our Portfolio</h1>
-        <p>Discover the creative projects we've delivered with passion and expertise.</p>
+        <div class="portfolio-art" role="img" aria-label="A playful collage of design, brand, and digital work">
+          <div class="portfolio-art-glow"></div>
+          <div class="portfolio-art-orbit orbit-one"></div>
+          <div class="portfolio-art-orbit orbit-two"></div>
+          <div class="portfolio-art-poster poster-one"><span>MAKE<br />ROOM.</span><i aria-hidden="true">✳</i></div>
+          <div class="portfolio-art-poster poster-two"><span>Ideas<br />in motion</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></div>
+          <div class="portfolio-art-window">
+            <div class="portfolio-window-top"><i></i><i></i><i></i><span>goodthings.studio</span></div>
+            <div class="portfolio-window-body"><span>GOOD IDEAS,<br />GREAT <b>ENERGY.</b></span><i aria-hidden="true">↗</i></div>
+          </div>
+          <span class="portfolio-art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="portfolio-art-sparkle sparkle-two" aria-hidden="true">✳</span>
+          <span class="portfolio-art-caption">A little more possibility <i aria-hidden="true">↗</i></span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#selected-work"><span></span> Scroll to explore</a>
+      <div class="hero-index" aria-hidden="true">03 <span></span> 04</div>
+    </section>
+
+    <section class="intro-strip portfolio-strip" aria-label="Our approach">
+      <div class="intro-strip-inner">
+        <span>Curiosity</span><i aria-hidden="true">✳</i>
+        <span>Good ideas</span><i aria-hidden="true">✳</i>
+        <span>Careful craft</span><i aria-hidden="true">✳</i>
+        <span>Real impact</span>
       </div>
     </section>
-    
-      <div class="portfolio-grid">
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Image 1">
-          <div class="portfolio-content">
-            <h3>Project One</h3>
-            <p>Creative branding and marketing solutions tailored to your needs.</p>
-            <div class="project-tags">
-              <span>Team Strategy</span>
-              <span>Marketing Excellence</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
+
+    <section class="portfolio-showcase" id="selected-work" aria-labelledby="work-title">
+      <div class="portfolio-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">A few things we've been thinking about</p>
+            <h2 id="work-title">Selected work.<br /><span>Made with purpose.</span></h2>
           </div>
+          <p class="section-intro">A glimpse into the kinds of challenges we love taking on — from finding a clear story to bringing a digital idea to life.</p>
         </div>
-    
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Image 2">
-          <div class="portfolio-content">
-            <h3>Project Two</h3>
-            <p>Innovative web development projects to elevate your online presence.</p>
-            <div class="project-tags">
-              <span>Web Development</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
+
+        <div class="portfolio-toolbar">
+          <div class="portfolio-filters" role="group" aria-label="Filter projects">
+            <button class="portfolio-filter is-active" type="button" data-filter="all" aria-pressed="true">All work <span>03</span></button>
+            <button class="portfolio-filter" type="button" data-filter="brand" aria-pressed="false">Brand &amp; strategy</button>
+            <button class="portfolio-filter" type="button" data-filter="digital" aria-pressed="false">Digital products</button>
+            <button class="portfolio-filter" type="button" data-filter="growth" aria-pressed="false">Growth</button>
           </div>
+          <p class="portfolio-count" aria-live="polite">Showing <span>3</span> projects</p>
         </div>
-    
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://plus.unsplash.com/premium_photo-1687205277517-5fa36b31b4f1?q=80&w=1785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item" data-category="brand growth" style="--card-index: 0">
+            <a class="portfolio-visual visual-brand" href="contact.html" aria-label="Discuss a brand and campaign project">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Creative team collaborating around a table" loading="lazy" />
+              <span class="visual-label"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Ideas into identity</span>
+              <span class="visual-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="portfolio-content">
+              <div class="portfolio-project-meta"><span>Brand &amp; campaign</span><span>01 / 03</span></div>
+              <h3>Make a good idea unforgettable.</h3>
+              <p>Brand thinking and creative campaigns that help people feel the story, not just see it.</p>
+              <div class="project-tags"><span>Brand strategy</span><span>Creative</span></div>
             </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
+          </article>
+
+          <article class="portfolio-item" data-category="digital" style="--card-index: 1">
+            <a class="portfolio-visual visual-digital" href="contact.html" aria-label="Discuss a digital product project">
+              <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&amp;w=1812&amp;auto=format&amp;fit=crop" alt="Developer working on a digital product" loading="lazy" />
+              <span class="visual-label"><i class="fa-solid fa-code" aria-hidden="true"></i> Thoughtful by design</span>
+              <span class="visual-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="portfolio-content">
+              <div class="portfolio-project-meta"><span>Web &amp; digital product</span><span>02 / 03</span></div>
+              <h3>Digital that feels effortless.</h3>
+              <p>Useful, considered digital experiences that make the complicated feel simple.</p>
+              <div class="project-tags"><span>Web development</span><span>UX / UI</span></div>
             </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
+          </article>
+
+          <article class="portfolio-item" data-category="digital growth" style="--card-index: 2">
+            <a class="portfolio-visual visual-growth" href="contact.html" aria-label="Discuss a digital growth project">
+              <img src="https://plus.unsplash.com/premium_photo-1687205277517-5fa36b31b4f1?q=80&amp;w=1785&amp;auto=format&amp;fit=crop" alt="A bright, modern creative workspace" loading="lazy" />
+              <span class="visual-label"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Built to keep growing</span>
+              <span class="visual-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="portfolio-content">
+              <div class="portfolio-project-meta"><span>Digital &amp; growth</span><span>03 / 03</span></div>
+              <h3>Good work, with room to grow.</h3>
+              <p>Connected digital thinking that brings the experience together and creates space for what's next.</p>
+              <div class="project-tags"><span>Digital strategy</span><span>Growth</span></div>
             </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
-        </div>
-        <div class="portfolio-item animate-on-scroll">
-          <img src="https://via.placeholder.com/300x200" alt="Project Image 3">
-          <div class="portfolio-content">
-            <h3>Project Three</h3>
-            <p>Comprehensive digital solutions designed to deliver results.</p>
-            <div class="project-tags">
-              <span>Digital Solutions</span>
-              <span>Innovation</span>
-            </div>
-            <a href="#" class="view-btn">View Project</a>
-          </div>
+          </article>
         </div>
       </div>
     </section>
- <div class="footer-top">
 
+    <section class="portfolio-cta" aria-labelledby="portfolio-cta-title">
+      <div class="portfolio-cta-inner">
+        <div>
+          <p class="eyebrow section-eyebrow">The next one could be yours</p>
+          <h2 id="portfolio-cta-title">Got a good idea?<br /><span>Let's give it a life.</span></h2>
+        </div>
+        <a class="button button-primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-top">
     <div class="gold-line"></div>
-
-    <svg class="wave"
-         viewBox="0 0 1440 120"
-         preserveAspectRatio="none">
-
-        <path fill="#000"
-        d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z">
-        </path>
-
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#000" d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z"></path>
     </svg>
-
-</div>   
-<footer class="footer">
+  </div>
+  <footer class="footer">
     <div class="footer-container">
-
-        <!-- Company Info -->
-        <div class="footer-column footer-brand">
-            <h2>Novex Foxter Group</h2>
-
-            <p>
-                Collaborative creativity and innovative
-                solutions that drive business growth and
-                create lasting impact.
-            </p>
-
-<div class="social-icons">
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-</div>
+      <div class="footer-column footer-brand">
+        <h2>Novex Foxter Group</h2>
+        <p>Collaborative creativity and innovative solutions that drive business growth and create lasting impact.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Company -->
-        <div class="footer-column">
-            <h3>Company</h3>
-
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="about.html">Our Team</a></li>
-                <li><a href="career.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="Services.html">Branding & Strategy</a></li>
-                <li><a href="Services.html">Marketing Campaigns</a></li>
-                <li><a href="Services.html">Creative Solutions</a></li>
-                <li><a href="Services.html">Consultation</a></li>
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-column">
-            <h3>Resources</h3>
-
-            <ul>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Portfolio.html">Case Studies</a></li>
-                <li><a href="Blog.html">Insights</a></li>
-            </ul>
-        </div>
-
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="Services.html">Branding &amp; Strategy</a></li>
+          <li><a href="Services.html">Marketing Campaigns</a></li>
+          <li><a href="Services.html">Creative Solutions</a></li>
+          <li><a href="Services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Case Studies</a></li>
+          <li><a href="Blog.html">Insights</a></li>
+        </ul>
+      </div>
     </div>
-
-    <hr>
-
+    <hr />
     <div class="footer-bottom">
-
-        <p>© 2026 Novex Foxter Group. All rights reserved.</p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-
+      <p>© 2026 Novex Foxter Group. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
     </div>
-
-</footer>
-<script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </footer>
+  <script src="Novex.js"></script>
   <script>
-    AOS.init({ duration: 1200 });
+    const portfolioFilters = document.querySelectorAll(".portfolio-filter");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+    const portfolioCount = document.querySelector(".portfolio-count span");
+
+    portfolioFilters.forEach((filter) => {
+      filter.addEventListener("click", () => {
+        const category = filter.dataset.filter;
+        let visibleCount = 0;
+
+        portfolioFilters.forEach((button) => {
+          const isActive = button === filter;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        portfolioItems.forEach((item) => {
+          const isVisible = category === "all" || item.dataset.category.split(" ").includes(category);
+          item.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        portfolioCount.textContent = String(visibleCount);
+      });
+    });
   </script>
 </body>
-</html> 
+</html>

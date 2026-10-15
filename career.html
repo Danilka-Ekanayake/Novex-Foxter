@@ -3,258 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
-  <link rel="stylesheet" href="Novex.css" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="Find your next chapter at Novex Foxter. Explore creative, marketing, and digital opportunities with our team." />
+  <title>Careers | Novex Foxter</title>
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Careers.css" />
   <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
-  <a class="logo" href="index.html" aria-label="Novex Foxter home">
-    <img src="Pictures/Novex Foxter Logo.png" alt="" />
-    <span class="logo-copy">
-      <strong>Novex Foxter</strong>
-      <span>Digital, thoughtfully done.</span>
-    </span>
-  </a>
-  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+<body class="home-page careers-page">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Novex Foxter home">
+      <img src="Pictures/Novex Foxter Logo.png" alt="" />
+      <span class="logo-copy">
+        <strong>Novex Foxter</strong>
+        <span>Digital, thoughtfully done.</span>
+      </span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cta"><a class="cta-button" href="career.html" aria-current="page">Join our team <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Journal</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
-    </ul>
-  </nav>
-</header>
+  <main>
+    <section class="hero careers-hero" aria-labelledby="careers-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Good people, good work</p>
+          <h1 id="careers-title">Bring your<br /><span>kind of curious.</span></h1>
+          <p class="hero-intro">We believe better work happens when thoughtful people make things together. Bring your point of view, your craft, and the ideas you can’t stop thinking about.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#open-roles">Explore opportunities <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="about.html">Get to know us <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <p>Different perspectives make the work better.</p>
+          </div>
+        </div>
 
-  <section class="join-us-section">
-    <h1>Careers</h1>
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://img.freepik.com/premium-vector/marketing-concept-business-promotion-communication-with-customer-product-advertising-online-offline-line-illustration_277904-1483.jpg" alt="Role Image 1">
+        <div class="careers-art" role="img" aria-label="A creative team bringing different skills together">
+          <div class="careers-art-glow"></div>
+          <div class="careers-art-orbit orbit-one"></div>
+          <div class="careers-art-orbit orbit-two"></div>
+          <div class="careers-art-core"><span>✳</span><strong>Better<br />together.</strong><small>GOOD WORK, GOOD PEOPLE</small></div>
+          <div class="careers-skill skill-create"><i class="fa-solid fa-shapes" aria-hidden="true"></i><span>Creative thinking</span></div>
+          <div class="careers-skill skill-build"><i class="fa-solid fa-code" aria-hidden="true"></i><span>Digital craft</span></div>
+          <div class="careers-skill skill-grow"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>Fresh perspective</span></div>
+          <span class="careers-art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="careers-art-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
       </div>
-      <div class="role-content">
-        <h3 class="role-title">Marketing Specialist</h3>
-        <p class="role-description">Join our creative marketing team and help bring Novex Foxter's brand to life. You'll be responsible for creating impactful campaigns and growing our customer base.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+      <a class="scroll-cue" href="#open-roles"><span></span> Scroll to explore</a>
+      <div class="hero-index" aria-hidden="true">05 <span></span> 05</div>
+    </section>
 
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/08/web-developer.jpg" alt="Role Image 2">
+    <section class="intro-strip careers-strip" aria-label="What we value">
+      <div class="intro-strip-inner">
+        <span>Curiosity</span><i aria-hidden="true">✳</i>
+        <span>Kindness</span><i aria-hidden="true">✳</i>
+        <span>Good questions</span><i aria-hidden="true">✳</i>
+        <span>Careful craft</span>
       </div>
-      <div class="role-content">
-        <h3 class="role-title">Web Developer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter,creating seamless user experiences that stand out in the digital space</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+    </section>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://www.animationkolkata.com/blog/wp-content/uploads/2021/08/graphic-designing-805x350-735x350.jpg" alt="Role Image 2">
-      </div>
-      <div class="role-content">
-        <h3 class="role-title">graphic designer</h3>
-        <p class="role-description">Create a creative and user intaractive graphic content and videos.creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+    <section class="careers-roles" id="open-roles" aria-labelledby="roles-title">
+      <div class="careers-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">Find your place in the picture</p>
+            <h2 id="roles-title">A few ways to<br /><span>make a difference.</span></h2>
+          </div>
+          <p class="section-intro">Whether you think in stories, systems, or pixels, there’s room for thoughtful people who care about making good work.</p>
+        </div>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://www.almondsolutions.com/images/blog-ui-ux-150223.jpg" alt="Role Image 2">
-      </div>
-      <div class="role-content">
-        <h3 class="role-title">UI/UX designer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter, creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+        <div class="roles-toolbar">
+          <div class="role-filters" role="group" aria-label="Filter open roles">
+            <button class="role-filter is-active" type="button" data-filter="all" aria-pressed="true">All opportunities <span>04</span></button>
+            <button class="role-filter" type="button" data-filter="creative" aria-pressed="false">Creative</button>
+            <button class="role-filter" type="button" data-filter="digital" aria-pressed="false">Digital</button>
+            <button class="role-filter" type="button" data-filter="growth" aria-pressed="false">Growth</button>
+          </div>
+          <p class="role-count" aria-live="polite">Showing <span class="role-count-number">4</span> <span class="role-count-label">opportunities</span></p>
+        </div>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://via.placeholder.com/500x300" alt="Role Image 2">
-      </div>
-      <div class="role-content">
-        <h3 class="role-title">Web Developer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter, creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+        <div class="role-grid">
+          <article class="role-card" data-category="growth" style="--role-index: 0">
+            <div class="role-card-top"><span class="role-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></span><span class="role-number">01</span></div>
+            <p class="role-category">Growth &amp; strategy</p>
+            <h3>Marketing Specialist</h3>
+            <p class="role-description">Bring ideas to life through thoughtful campaigns, clear storytelling, and a feel for what makes people connect.</p>
+            <div class="role-card-bottom"><span>Make good things known.</span><a class="role-apply" href="Apply%20now.html?role=Marketing%20Specialist">Explore this role <i aria-hidden="true">↗</i></a></div>
+          </article>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://via.placeholder.com/500x300" alt="Role Image 2">
-      </div>
-      <div class="role-content">
-        <h3 class="role-title">Web Developer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter, creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+          <article class="role-card" data-category="digital" style="--role-index: 1">
+            <div class="role-card-top"><span class="role-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span class="role-number">02</span></div>
+            <p class="role-category">Digital &amp; technology</p>
+            <h3>Web Developer</h3>
+            <p class="role-description">Build considered websites and applications that feel effortless to use and stand up to the real world.</p>
+            <div class="role-card-bottom"><span>Make digital feel human.</span><a class="role-apply" href="Apply%20now.html?role=Web%20Developer">Explore this role <i aria-hidden="true">↗</i></a></div>
+          </article>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://via.placeholder.com/500x300" alt="Role Image 2">
-      </div>
-      <div class="role-content">
-        <h3 class="role-title">Web Developer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter, creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
-      </div>
-    </div>
+          <article class="role-card" data-category="creative" style="--role-index: 2">
+            <div class="role-card-top"><span class="role-icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></span><span class="role-number">03</span></div>
+            <p class="role-category">Creative &amp; brand</p>
+            <h3>Graphic Designer</h3>
+            <p class="role-description">Shape visual stories across brands and content, bringing strong ideas to life with craft and character.</p>
+            <div class="role-card-bottom"><span>Give ideas a point of view.</span><a class="role-apply" href="Apply%20now.html?role=Graphic%20Designer">Explore this role <i aria-hidden="true">↗</i></a></div>
+          </article>
 
-    
-    <div class="role-item">
-      <div class="role-image">
-        <img src="https://via.placeholder.com/500x300" alt="Role Image 2">
+          <article class="role-card" data-category="creative digital" style="--role-index: 3">
+            <div class="role-card-top"><span class="role-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><span class="role-number">04</span></div>
+            <p class="role-category">Experience &amp; design</p>
+            <h3>UI/UX Designer</h3>
+            <p class="role-description">Make digital experiences more useful and intuitive by bringing people’s needs into every design decision.</p>
+            <div class="role-card-bottom"><span>Make every detail count.</span><a class="role-apply" href="Apply%20now.html?role=UI%2FUX%20Designer">Explore this role <i aria-hidden="true">↗</i></a></div>
+          </article>
+        </div>
+        <p class="roles-note"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i> Don’t see your role? <a href="contact.html">Tell us what you’d bring.</a></p>
       </div>
-      <div class="role-content">
-        <h3 class="role-title">Web Developer</h3>
-        <p class="role-description">Build and maintain stunning websites and applications for Novex Foxter, creating seamless user experiences that stand out in the digital space.</p>
-        <a href="Apply now.html" class="apply-btn">Apply Now</a>
+    </section>
+
+    <section class="careers-cta" aria-labelledby="careers-cta-title">
+      <div class="careers-cta-inner">
+        <div>
+          <p class="eyebrow section-eyebrow">Your next chapter can start here</p>
+          <h2 id="careers-cta-title">Bring your spark.<br /><span>We’ll bring the team.</span></h2>
+        </div>
+        <a class="button button-primary" href="Apply%20now.html">Make your move <span aria-hidden="true">↗</span></a>
       </div>
-    </div>
-  </section>
-
-  <script>
-    // Function to handle visibility of elements on scroll
-    function handleScrollAnimation() {
-      const roleItems = document.querySelectorAll('.role-item');
-      roleItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          item.classList.add('visible');
-        } else {
-          item.classList.remove('visible');
-        }
-      });
-    }
-
-    // Trigger scroll animation on page load and scroll events
-    window.addEventListener('scroll', handleScrollAnimation);
-    window.addEventListener('load', handleScrollAnimation);
-  </script>
+    </section>
+  </main>
 
   <div class="footer-top">
-
     <div class="gold-line"></div>
-
-    <svg class="wave"
-         viewBox="0 0 1440 120"
-         preserveAspectRatio="none">
-
-        <path fill="#000"
-        d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z">
-        </path>
-
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#000" d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z"></path>
     </svg>
-
-</div>
-<footer class="footer">
+  </div>
+  <footer class="footer">
     <div class="footer-container">
-
-        <!-- Company Info -->
-        <div class="footer-column footer-brand">
-            <h2>Novex Foxter Group</h2>
-
-            <p>
-                Collaborative creativity and innovative
-                solutions that drive business growth and
-                create lasting impact.
-            </p>
-
-<div class="social-icons">
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-</div>
+      <div class="footer-column footer-brand">
+        <h2>Novex Foxter Group</h2>
+        <p>Collaborative creativity and innovative solutions that drive business growth and create lasting impact.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Company -->
-        <div class="footer-column">
-            <h3>Company</h3>
-
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="about.html">Our Team</a></li>
-                <li><a href="career.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="Services.html">Branding & Strategy</a></li>
-                <li><a href="Services.html">Marketing Campaigns</a></li>
-                <li><a href="Services.html">Creative Solutions</a></li>
-                <li><a href="Services.html">Consultation</a></li>
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-column">
-            <h3>Resources</h3>
-
-            <ul>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Portfolio.html">Case Studies</a></li>
-                <li><a href="Blog.html">Insights</a></li>
-            </ul>
-        </div>
-
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="Services.html">Branding &amp; Strategy</a></li>
+          <li><a href="Services.html">Marketing Campaigns</a></li>
+          <li><a href="Services.html">Creative Solutions</a></li>
+          <li><a href="Services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Case Studies</a></li>
+          <li><a href="Blog.html">Insights</a></li>
+        </ul>
+      </div>
     </div>
-
-    <hr>
-
+    <hr />
     <div class="footer-bottom">
-
-        <p>© 2026 Novex Foxter Group. All rights reserved.</p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-
+      <p>© 2026 Novex Foxter Group. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
     </div>
-
-</footer>
-<script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </footer>
+  <script src="Novex.js"></script>
   <script>
-    AOS.init({ duration: 1200 });
+    const roleFilters = document.querySelectorAll(".role-filter");
+    const roleCards = document.querySelectorAll(".role-card");
+    const roleCount = document.querySelector(".role-count-number");
+    const roleCountLabel = document.querySelector(".role-count-label");
+
+    roleFilters.forEach((filter) => {
+      filter.addEventListener("click", () => {
+        const category = filter.dataset.filter;
+        let visibleCount = 0;
+
+        roleFilters.forEach((button) => {
+          const isActive = button === filter;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        roleCards.forEach((card) => {
+          const isVisible = category === "all" || card.dataset.category.split(" ").includes(category);
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        roleCount.textContent = String(visibleCount);
+        roleCountLabel.textContent = visibleCount === 1 ? "opportunity" : "opportunities";
+      });
+    });
   </script>
 </body>
 </html>
-
-
-
- 

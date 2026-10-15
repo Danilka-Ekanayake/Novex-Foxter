@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="Explore Novex Foxter services across strategy, branding, digital products, technology, and growth." />
   <title>Services | Novex Foxter</title>
-  <link rel="stylesheet" href="Novex.css" />
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Services.css" />
   <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
+<body class="home-page services-page">
+<header class="header">
   <a class="logo" href="index.html" aria-label="Novex Foxter home">
     <img src="Pictures/Novex Foxter Logo.png" alt="" />
     <span class="logo-copy">
@@ -31,7 +34,7 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
+      <li><a href="Services.html" aria-current="page">Services</a></li>
       <li><a href="Portfolio.html">Portfolio</a></li>
       <li><a href="Blog.html">Journal</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -39,53 +42,120 @@
     </ul>
   </nav>
 </header>
-    <main class="services-main">
-    <section class="about-hero" data-aos="fade-up">
-      <div>
-        <p class="promo-label">Novex foxter services</p>
-        <h1>Our Services</h1>
-        <p>We build digital products that connect brands with people — design, development, and marketing that drives results.</p>
+  <main>
+    <section class="hero services-hero" aria-labelledby="services-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Thoughtful work, made real</p>
+          <h1 id="services-title">The right ideas.<br /><span>The right people.</span></h1>
+          <p class="hero-intro">From the first question to the finished product, we bring strategy, design, and technology together to move your business forward.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services">Explore our services <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="contact.html">Let's talk <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <p>One thoughtful team, from first spark to what comes next.</p>
+          </div>
+        </div>
+
+        <div class="services-art" role="img" aria-label="Strategy, design, and technology working together">
+          <div class="services-art-orbit orbit-one"></div>
+          <div class="services-art-orbit orbit-two"></div>
+          <div class="services-art-glow"></div>
+          <div class="services-art-core">
+            <span class="core-mark" aria-hidden="true">✳</span>
+            <span>Made to move<br />you forward.</span>
+          </div>
+          <div class="services-art-node node-strategy"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i><span>Strategy</span></div>
+          <div class="services-art-node node-design"><i class="fa-solid fa-shapes" aria-hidden="true"></i><span>Design</span></div>
+          <div class="services-art-node node-tech"><i class="fa-solid fa-code" aria-hidden="true"></i><span>Technology</span></div>
+          <span class="services-art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="services-art-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#services"><span></span> Scroll to explore</a>
+      <div class="hero-index" aria-hidden="true">02 <span></span> 04</div>
+    </section>
+
+    <section class="intro-strip" aria-label="Our capabilities">
+      <div class="intro-strip-inner">
+        <span>Strategy</span><i aria-hidden="true">✳</i>
+        <span>Brand</span><i aria-hidden="true">✳</i>
+        <span>Digital products</span><i aria-hidden="true">✳</i>
+        <span>Technology</span><i aria-hidden="true">✳</i>
+        <span>Growth</span>
       </div>
     </section>
 
-      <section class="services-grid" data-aos="fade-up">
-        <div class="service-card">
-          <i class="fa-solid fa-code service-icon"></i>
-          <h3>Web Development</h3>
-          <p>Responsive, performant websites and web apps built with modern standards and scalable architectures.</p>
+    <section class="services-preview services-offerings" id="services" aria-labelledby="offerings-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">The way we make a difference</p>
+            <h2 id="offerings-title">Good thinking.<br /><span>Better doing.</span></h2>
+          </div>
+          <p class="section-intro">The right mix of craft and know-how to help you meet your next challenge — and make the most of what comes after.</p>
         </div>
 
-        <div class="service-card">
-          <i class="fa-solid fa-paint-brush service-icon"></i>
-          <h3>Branding & Design</h3>
-          <p>Identity, visual systems, and UX that tell a clear story and make your product memorable.</p>
+        <div class="service-cards">
+          <article class="service-card">
+            <span class="service-number">01 / BUILD</span>
+            <span class="service-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+            <h3>Web Development</h3>
+            <p>Responsive, performant websites and web apps built with modern standards and scalable architectures.</p>
+            <a class="service-link" href="contact.html">Build something great <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02 / CREATE</span>
+            <span class="service-icon"><i class="fa-solid fa-paintbrush" aria-hidden="true"></i></span>
+            <h3>Branding &amp; Design</h3>
+            <p>Identity, visual systems, and UX that tell a clear story and make your product memorable.</p>
+            <a class="service-link" href="contact.html">Make it memorable <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03 / GROW</span>
+            <span class="service-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></span>
+            <h3>Digital Marketing</h3>
+            <p>Data-driven marketing, social strategies, and campaigns to grow awareness and conversions.</p>
+            <a class="service-link" href="contact.html">Find your audience <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04 / LAUNCH</span>
+            <span class="service-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></span>
+            <h3>Mobile Apps</h3>
+            <p>Cross-platform mobile development focused on performance and great user experiences.</p>
+            <a class="service-link" href="contact.html">Bring it to life <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">05 / SUPPORT</span>
+            <span class="service-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+            <h3>Security &amp; Maintenance</h3>
+            <p>Ongoing maintenance, security audits, and performance monitoring to keep products healthy.</p>
+            <a class="service-link" href="contact.html">Keep it running well <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">06 / OPTIMIZE</span>
+            <span class="service-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+            <h3>Analytics &amp; Growth</h3>
+            <p>Measurement frameworks and growth experiments that help you make confident product decisions.</p>
+            <a class="service-link" href="contact.html">Grow with confidence <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="service-card">
-          <i class="fa-solid fa-bullhorn service-icon"></i>
-          <h3>Digital Marketing</h3>
-          <p>Data-driven marketing, social strategies, and campaigns to grow awareness and conversions.</p>
+    <section class="services-cta" aria-labelledby="services-cta-title">
+      <div class="services-cta-inner">
+        <div>
+          <p class="eyebrow section-eyebrow">Your next move starts here</p>
+          <h2 id="services-cta-title">Have something<br /><span>good in mind?</span></h2>
         </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-mobile-screen-button service-icon"></i>
-          <h3>Mobile Apps</h3>
-          <p>Cross-platform mobile development focused on performance and great user experiences.</p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-lock service-icon"></i>
-          <h3>Security & Maintenance</h3>
-          <p>Ongoing maintenance, security audits, and performance monitoring to keep products healthy.</p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-chart-line service-icon"></i>
-          <h3>Analytics & Growth</h3>
-          <p>Measurement frameworks and growth experiments that help you make confident product decisions.</p>
-        </div>
-      </section>
-    </main>
+        <a class="button button-primary" href="contact.html">Tell us about it <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 <div class="footer-top">
 
     <div class="gold-line"></div>
@@ -178,9 +248,5 @@
 
 </footer>
     <script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200 });
-  </script>
 </body>
-</html>    
+</html>

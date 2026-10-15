@@ -3,184 +3,267 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Novex Foxter</title>
-  <link rel="stylesheet" href="Novex.css" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="Ideas, insights, and stories from Novex Foxter on design, technology, growth, and creative work." />
+  <title>Journal | Novex Foxter</title>
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Blog.css" />
   <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
-  <a class="logo" href="index.html" aria-label="Novex Foxter home">
-    <img src="Pictures/Novex Foxter Logo.png" alt="" />
-    <span class="logo-copy">
-      <strong>Novex Foxter</strong>
-      <span>Digital, thoughtfully done.</span>
-    </span>
-  </a>
-  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+<body class="home-page journal-page">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Novex Foxter home">
+      <img src="Pictures/Novex Foxter Logo.png" alt="" />
+      <span class="logo-copy">
+        <strong>Novex Foxter</strong>
+        <span>Digital, thoughtfully done.</span>
+      </span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Blog.html" aria-current="page">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Journal</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
-    </ul>
-  </nav>
-</header>
-    <main class="blog-main">
-    <section class="about-hero" data-aos="fade-up">
-      <div>
-        <p class="promo-label">Novex foxter blogs</p>
-        <h1>Insights & Stories</h1>
-        <p>Articles on product design, development, marketing, and the thinking behind our work.</p>
+  <main>
+    <section class="hero journal-hero" aria-labelledby="journal-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Notes from the studio</p>
+          <h1 id="journal-title">A space for<br /><span>good ideas.</span></h1>
+          <p class="hero-intro">Thoughts, discoveries, and practical ideas from the worlds of design, technology, and growing a business.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#latest-stories">Find a fresh perspective <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="about.html">Meet the people behind them <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <p>Curiosity is a good place to start.</p>
+          </div>
+        </div>
+
+        <div class="journal-art" role="img" aria-label="An animated, layered stack of creative studio notes">
+          <div class="journal-art-glow"></div>
+          <div class="journal-orbit orbit-one"></div>
+          <div class="journal-orbit orbit-two"></div>
+          <div class="journal-note note-back"><span>THINK<br />A LITTLE<br />DIFFERENT.</span><i aria-hidden="true">↗</i></div>
+          <div class="journal-note note-front">
+            <span class="note-kicker">A NOTE FROM THE STUDIO</span>
+            <span class="note-headline">Make space<br />for <em>better.</em></span>
+            <span class="note-footer"><span></span> IDEAS IN PROGRESS</span>
+          </div>
+          <span class="journal-art-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="journal-art-sparkle sparkle-two" aria-hidden="true">✳</span>
+          <span class="journal-art-caption">Read. Wonder. Repeat.</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#latest-stories"><span></span> Scroll to explore</a>
+      <div class="hero-index" aria-hidden="true">04 <span></span> 04</div>
+    </section>
+
+    <section class="intro-strip journal-strip" aria-label="Journal topics">
+      <div class="intro-strip-inner">
+        <span>Design</span><i aria-hidden="true">✳</i>
+        <span>Technology</span><i aria-hidden="true">✳</i>
+        <span>Growth</span><i aria-hidden="true">✳</i>
+        <span>Creative thinking</span>
       </div>
     </section>
 
-      <section class="blog-list">
-        <article class="blog-card" data-aos="fade-up">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Design Systems">
-          <div class="blog-content">
-            <h2>Design systems that scale</h2>
-            <p>How we build consistent, reusable UI systems that speed up product development and improve UX.</p>
-            <a href="#" class="read-more">Read more</a>
+    <section class="journal-stories" id="latest-stories" aria-labelledby="stories-title">
+      <div class="journal-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">Little sparks for big-picture thinking</p>
+            <h2 id="stories-title">Fresh from<br /><span>our point of view.</span></h2>
           </div>
-        </article>
+          <p class="section-intro">Ideas to help make digital work clearer, more considered, and a little more human.</p>
+        </div>
 
-        <article class="blog-card" data-aos="fade-up">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Web Performance">
-          <div class="blog-content">
-            <h2>Performance-first web development</h2>
-            <p>Practical steps to make websites faster, more accessible, and delightful on every device.</p>
-            <a href="#" class="read-more">Read more</a>
+        <div class="journal-toolbar">
+          <div class="journal-filters" role="group" aria-label="Filter journal stories">
+            <button class="journal-filter is-active" type="button" data-filter="all" aria-pressed="true">All notes <span>04</span></button>
+            <button class="journal-filter" type="button" data-filter="design" aria-pressed="false">Design</button>
+            <button class="journal-filter" type="button" data-filter="technology" aria-pressed="false">Technology</button>
+            <button class="journal-filter" type="button" data-filter="growth" aria-pressed="false">Growth</button>
+            <button class="journal-filter" type="button" data-filter="studio" aria-pressed="false">Studio</button>
           </div>
-        </article>
+          <p class="journal-count" aria-live="polite">Showing <span class="journal-count-number">4</span> <span class="journal-count-label">notes</span></p>
+        </div>
 
-        <article class="blog-card" data-aos="fade-up">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Marketing">
-          <div class="blog-content">
-            <h2>Growth marketing: experiments that work</h2>
-            <p>How we design small experiments to find channels and messages that move the needle.</p>
-            <a href="#" class="read-more">Read more</a>
-          </div>
-        </article>
-        
-        <article class="blog-card" data-aos="fade-up">
-          <img src="Pictures/Novex Foxter Logo.png" alt="Novex Foxter Logo">
-          <div class="blog-content">
-            <h2>About Novex Foxter</h2>
-            <p>Learn more about our mission, team, and the values that drive our work. This is our story in brief.</p>
-            <a href="about.html" class="read-more">Read more</a>
-          </div>
-        </article>
-      </section>
-    </main>
-<div class="footer-top">
+        <div class="journal-grid">
+          <article class="journal-card journal-featured" data-category="design" style="--card-index: 0">
+            <div class="journal-image image-design">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&amp;w=1770&amp;auto=format&amp;fit=crop" alt="Creative team sharing ideas around a table" loading="lazy" />
+              <span class="journal-image-mark"><i class="fa-solid fa-shapes" aria-hidden="true"></i> DESIGN THINKING</span>
+            </div>
+            <div class="journal-card-copy">
+              <div class="journal-meta"><span>Design</span><span>6 min read</span></div>
+              <h3>Design systems that scale</h3>
+              <p>How consistent, reusable UI systems can make product development smoother and every interaction feel more considered.</p>
+              <span class="journal-card-end">A note on building better <i aria-hidden="true">✳</i></span>
+            </div>
+          </article>
 
+          <article class="journal-card" data-category="technology" style="--card-index: 1">
+            <div class="journal-image image-technology">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&amp;w=1770&amp;auto=format&amp;fit=crop" alt="A developer's hands working at a laptop" loading="lazy" />
+              <span class="journal-image-mark"><i class="fa-solid fa-code" aria-hidden="true"></i> BETTER BYTES</span>
+            </div>
+            <div class="journal-card-copy">
+              <div class="journal-meta"><span>Technology</span><span>5 min read</span></div>
+              <h3>Performance-first web development</h3>
+              <p>Practical ways to make websites faster, more accessible, and delightful on every device.</p>
+              <span class="journal-card-end">A note on thoughtful tech <i aria-hidden="true">✳</i></span>
+            </div>
+          </article>
+
+          <article class="journal-card" data-category="growth" style="--card-index: 2">
+            <div class="journal-image image-growth">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&amp;w=1770&amp;auto=format&amp;fit=crop" alt="Code on screen in a creative workspace" loading="lazy" />
+              <span class="journal-image-mark"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> SMALL EXPERIMENTS</span>
+            </div>
+            <div class="journal-card-copy">
+              <div class="journal-meta"><span>Growth</span><span>4 min read</span></div>
+              <h3>Growth marketing: experiments that work</h3>
+              <p>How small, thoughtful experiments can uncover the channels and messages that move the needle.</p>
+              <span class="journal-card-end">A note on finding momentum <i aria-hidden="true">✳</i></span>
+            </div>
+          </article>
+
+          <article class="journal-card journal-studio-card" data-category="studio" style="--card-index: 3">
+            <div class="journal-studio-art" aria-hidden="true">
+              <span class="studio-orbit"></span>
+              <img src="Pictures/Novex Foxter Logo.png" alt="" loading="lazy" />
+              <span class="studio-art-caption">GOOD PEOPLE.<br />GOOD THINKING.</span>
+              <span class="studio-art-sparkle">✳</span>
+            </div>
+            <div class="journal-card-copy">
+              <div class="journal-meta"><span>Studio notes</span><span>2 min read</span></div>
+              <h3>A little about Novex Foxter</h3>
+              <p>Meet the curious, collaborative team and the values that shape the way we work.</p>
+              <a class="journal-card-end journal-link" href="about.html">Get to know us <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal-cta" aria-labelledby="journal-cta-title">
+      <div class="journal-cta-inner">
+        <div>
+          <p class="eyebrow section-eyebrow">Have a thought of your own?</p>
+          <h2 id="journal-cta-title">Good conversations<br /><span>start somewhere.</span></h2>
+        </div>
+        <a class="button button-primary" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-top">
     <div class="gold-line"></div>
-
-    <svg class="wave"
-         viewBox="0 0 1440 120"
-         preserveAspectRatio="none">
-
-        <path fill="#000"
-        d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z">
-        </path>
-
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#000" d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z"></path>
     </svg>
-
-</div>
-<footer class="footer">
+  </div>
+  <footer class="footer">
     <div class="footer-container">
-
-        <!-- Company Info -->
-        <div class="footer-column footer-brand">
-            <h2>Novex Foxter Group</h2>
-
-            <p>
-                Collaborative creativity and innovative
-                solutions that drive business growth and
-                create lasting impact.
-            </p>
-
-<div class="social-icons">
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-</div>
+      <div class="footer-column footer-brand">
+        <h2>Novex Foxter Group</h2>
+        <p>Collaborative creativity and innovative solutions that drive business growth and create lasting impact.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Company -->
-        <div class="footer-column">
-            <h3>Company</h3>
-
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="about.html">Our Team</a></li>
-                <li><a href="career.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="Services.html">Branding & Strategy</a></li>
-                <li><a href="Services.html">Marketing Campaigns</a></li>
-                <li><a href="Services.html">Creative Solutions</a></li>
-                <li><a href="Services.html">Consultation</a></li>
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-column">
-            <h3>Resources</h3>
-
-            <ul>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Portfolio.html">Case Studies</a></li>
-                <li><a href="Blog.html">Insights</a></li>
-            </ul>
-        </div>
-
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="Services.html">Branding &amp; Strategy</a></li>
+          <li><a href="Services.html">Marketing Campaigns</a></li>
+          <li><a href="Services.html">Creative Solutions</a></li>
+          <li><a href="Services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Case Studies</a></li>
+          <li><a href="Blog.html">Insights</a></li>
+        </ul>
+      </div>
     </div>
-
-    <hr>
-
+    <hr />
     <div class="footer-bottom">
-
-        <p>© 2026 Novex Foxter Group. All rights reserved.</p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-
+      <p>© 2026 Novex Foxter Group. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
     </div>
-
-</footer>
-    <script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </footer>
+  <script src="Novex.js"></script>
   <script>
-    AOS.init({ duration: 1200 });
+    const journalFilters = document.querySelectorAll(".journal-filter");
+    const journalCards = document.querySelectorAll(".journal-card");
+    const journalCount = document.querySelector(".journal-count-number");
+    const journalCountLabel = document.querySelector(".journal-count-label");
+
+    journalFilters.forEach((filter) => {
+      filter.addEventListener("click", () => {
+        const category = filter.dataset.filter;
+        let visibleCount = 0;
+
+        journalFilters.forEach((button) => {
+          const isActive = button === filter;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        journalCards.forEach((card) => {
+          const isVisible = category === "all" || card.dataset.category === category;
+          card.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        journalCount.textContent = String(visibleCount);
+        journalCountLabel.textContent = visibleCount === 1 ? "note" : "notes";
+      });
+    });
   </script>
 </body>
-</html>    
+</html>

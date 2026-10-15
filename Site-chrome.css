@@ -15,6 +15,11 @@
   backdrop-filter: blur(14px);
 }
 
+.header,
+.header * {
+  font-family: "Poppins", "Roboto", Arial, sans-serif;
+}
+
 .header .logo {
   display: flex;
   flex: 0 0 auto;

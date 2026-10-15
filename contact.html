@@ -3,155 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Novex Foxter</title>
-  <link rel="stylesheet" href="Contact.css" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="Start a conversation with Novex Foxter about your next brand, design, or digital project." />
+  <title>Let's Talk | Novex Foxter</title>
   <link rel="icon" type="image/png" href="Pictures/Novex Foxter Logo.png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="Contact-page.css" />
   <link rel="stylesheet" href="Site-chrome.css" />
 </head>
-<body>
-<header class="header" data-aos="fade-down">
-  <a class="logo" href="index.html" aria-label="Novex Foxter home">
-    <img src="Pictures/Novex Foxter Logo.png" alt="" />
-    <span class="logo-copy">
-      <strong>Novex Foxter</strong>
-      <span>Digital, thoughtfully done.</span>
-    </span>
-  </a>
-  <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+<body class="home-page contact-page">
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="Novex Foxter home">
+      <img src="Pictures/Novex Foxter Logo.png" alt="" />
+      <span class="logo-copy">
+        <strong>Novex Foxter</strong>
+        <span>Digital, thoughtfully done.</span>
+      </span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Blog.html">Journal</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav class="nav" id="primary-navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Blog.html">Journal</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="cta"><a class="cta-button" href="career.html">Join our team <span aria-hidden="true">↗</span></a></li>
-    </ul>
-  </nav>
-</header>
+  <main>
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="contact-grid" aria-hidden="true"></div>
+      <div class="contact-shell">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A good place to start</p>
+          <h1 id="contact-title">Let's make<br /><span>something matter.</span></h1>
+          <p class="contact-intro">Have a project, a question, or just a spark of an idea? Tell us a little about it. We’d love to hear what you’re thinking.</p>
+          <div class="contact-note">
+            <span class="contact-note-icon"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i></span>
+            <span><strong>Every good thing starts somewhere.</strong><small>Start with a few words. We’ll take it from there.</small></span>
+          </div>
+          <div class="contact-topics" aria-label="We'd love to hear about">
+            <span>New projects</span><i aria-hidden="true">✳</i>
+            <span>Collaborations</span><i aria-hidden="true">✳</i>
+            <span>Good questions</span>
+          </div>
+        </div>
 
-  <div class="content">
-    <div class="contact">
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <div class="contact-form-wrap">
+          <div class="contact-form-heading">
+            <span class="form-step">LET'S BEGIN <span>01 / 01</span></span>
+            <h2>Tell us what's on your mind.</h2>
+            <p>Share as much or as little as you like.</p>
+          </div>
+          <form class="contact-form">
+            <div class="contact-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="How should we call you?" autocomplete="name" required />
+            </div>
+            <div class="contact-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="Where can we reach you?" autocomplete="email" required />
+            </div>
+            <div class="contact-field">
+              <label for="message">A little about it</label>
+              <textarea id="message" name="message" rows="4" placeholder="The big idea, the small detail, or anything in between..." required></textarea>
+            </div>
+            <button class="contact-submit" type="submit">Send your message <span aria-hidden="true">↗</span></button>
+            <p class="contact-form-footnote"><i class="fa-solid fa-lock" aria-hidden="true"></i> Add your details and a few words about what you have in mind.</p>
+          </form>
+          <span class="contact-card-sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="contact-card-sparkle sparkle-two" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <div class="contact-index" aria-hidden="true">LET'S <span></span> TALK</div>
+    </section>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <section class="contact-next" aria-label="Other ways to connect">
+      <div class="contact-next-inner">
+        <div class="contact-next-heading">
+          <p class="eyebrow section-eyebrow">The conversation can start anywhere</p>
+          <h2>Not sure where<br /><span>to begin?</span></h2>
+        </div>
+        <a class="contact-next-card" href="Services.html">
+          <span class="contact-next-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></span>
+          <span><strong>Explore what we do</strong><small>Find the right kind of help for your next move.</small></span>
+          <span class="contact-next-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-next-card" href="Portfolio.html">
+          <span class="contact-next-icon"><i class="fa-solid fa-shapes" aria-hidden="true"></i></span>
+          <span><strong>See a little of our work</strong><small>Get a feel for the things we love making.</small></span>
+          <span class="contact-next-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-
-<div class="footer-top">
-
+  <div class="footer-top">
     <div class="gold-line"></div>
-
-    <svg class="wave"
-         viewBox="0 0 1440 120"
-         preserveAspectRatio="none">
-
-        <path fill="#000"
-        d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z">
-        </path>
-
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#000" d="M0,64L60,58C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,58C1200,43,1320,21,1380,10L1440,0L1440,120L0,120Z"></path>
     </svg>
-
-</div>
-<footer class="footer">
+  </div>
+  <footer class="footer">
     <div class="footer-container">
-
-        <!-- Company Info -->
-        <div class="footer-column footer-brand">
-            <h2>Novex Foxter Group</h2>
-
-            <p>
-                Collaborative creativity and innovative
-                solutions that drive business growth and
-                create lasting impact.
-            </p>
-
-<div class="social-icons">
-    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
-    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
-</div>
+      <div class="footer-column footer-brand">
+        <h2>Novex Foxter Group</h2>
+        <p>Collaborative creativity and innovative solutions that drive business growth and create lasting impact.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Company -->
-        <div class="footer-column">
-            <h3>Company</h3>
-
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="about.html">Our Team</a></li>
-                <li><a href="career.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Services -->
-        <div class="footer-column">
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="Services.html">Branding & Strategy</a></li>
-                <li><a href="Services.html">Marketing Campaigns</a></li>
-                <li><a href="Services.html">Creative Solutions</a></li>
-                <li><a href="Services.html">Consultation</a></li>
-            </ul>
-        </div>
-
-        <!-- Resources -->
-        <div class="footer-column">
-            <h3>Resources</h3>
-
-            <ul>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Portfolio.html">Case Studies</a></li>
-                <li><a href="Blog.html">Insights</a></li>
-            </ul>
-        </div>
-
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="Services.html">Branding &amp; Strategy</a></li>
+          <li><a href="Services.html">Marketing Campaigns</a></li>
+          <li><a href="Services.html">Creative Solutions</a></li>
+          <li><a href="Services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Case Studies</a></li>
+          <li><a href="Blog.html">Insights</a></li>
+        </ul>
+      </div>
     </div>
-
-    <hr>
-
+    <hr />
     <div class="footer-bottom">
-
-        <p>© 2026 Novex Foxter Group. All rights reserved.</p>
-
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-        </div>
-
+      <p>© 2026 Novex Foxter Group. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
     </div>
-
-</footer>
+  </footer>
   <script src="Novex.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200 });
-  </script>
 </body>
 </html>
